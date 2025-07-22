@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistic Core</title>
+  
+</head>
+<body>
+  <header>
+    <h1>Artistic Core</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About Us</a>
+      <a href="#signup">Sign Up</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Start learning beautifully</h2>
+      <p>Unleash your creativity with courses crafted by experts to elevate your design journey.</p>
+      <button>Start A Course</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://img.timviec.com.vn/2022/08/digital-art-la-gi.jpg..jpg" alt="digital art">
+    </div>
+  </section>
+
+  <section class="course-section" id="courses">
+    <div class="course-header">
+      <h2>All Courses of Artistic Core</h2>
+    </div>
+    <div class="course-grid">
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.4G65I0jIvK8JrS0XUNNWdAHaEo?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Course 1">
+        <div class="course-content">
+          <h3>Color Theory for Designers</h3>
+          <p>Learn how to master color combinations using palettes.</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.YEz0QdqlZMS6WBa5mjZAmwHaEK?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Course 2">
+        <div class="course-content">
+          <h3>UX Design Basics</h3>
+          <p>Build layouts and intuitive interfaces with soft color tones.</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.QyAuLjJWK76Bbz8x2c9UzgHaE7?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Course 3">
+        <div class="course-content">
+          <h3>Typography in Web</h3>
+          <p>Design elegant text styles suited for gentle and artistic websites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center; max-width: 600px; margin: auto;">
+      Artistic Core is your creative hub for design-centric learning. We provide  courses tailored to ignite your artistic potential with elegance and ease.
+    </p>
+  </section>
+
+  <section class="auth" id="signup">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button class="submit" type="submit">Create Account</button>
+    </form>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button class="submit" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Artistic Core. Designed with love and pastel passion.
+  </footer>
+</body>
+  <style>
+    :root {
+      --bg-color: #fdf2f2;
+      --primary-color: #eec9c4;
+      --accent-color: #c8a69f;
+      --text-color: #3e2723;
+      --button-color: #f4cccc;
+      --button-hover: #e0a899;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      background-color: #fff9f9;
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+      padding-right: 2rem;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text button {
+      padding: 0.8rem 1.5rem;
+      background-color: var(--button-color);
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: var(--button-hover);
+    }
+
+    .hero-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .course-section {
+      padding: 2rem;
+    }
+
+    .course-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .course-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: scale(1.03);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-content {
+      padding: 1rem;
+    }
+
+    .course-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .course-content p {
+      font-size: 0.95rem;
+      color: #5e4541;
+    }
+
+    .about, .contact, .auth {
+      padding: 2rem;
+      background-color: #fff9f9;
+    }
+
+    .about h2, .contact h2, .auth h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    button.submit {
+      background-color: var(--button-color);
+      border: none;
+      border-radius: 5px;
+      padding: 0.8rem;
+      cursor: pointer;
+    }
+
+    button.submit:hover {
+      background-color: var(--button-hover);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      padding: 1rem;
+      text-align: center;
+      color: var(--text-color);
+      margin-top: 2rem;
+    }
+  </style
+</html>
